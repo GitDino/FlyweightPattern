@@ -14,6 +14,8 @@
 		01882BAF207953C8008244DB /* FlyweightPatternDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01882BAE207953C8008244DB /* FlyweightPatternDemoTests.m */; };
 		01882BBA207953C8008244DB /* FlyweightPatternDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01882BB9207953C8008244DB /* FlyweightPatternDemoUITests.m */; };
 		01882BCC20795416008244DB /* DORootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 01882BCB20795416008244DB /* DORootVC.m */; };
+		01882BD02079554D008244DB /* DOFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 01882BCF2079554D008244DB /* DOFlower.m */; };
+		01882BD320795583008244DB /* DOFlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01882BD220795583008244DB /* DOFlowerFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		01882BBB207953C8008244DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01882BCA20795416008244DB /* DORootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DORootVC.h; sourceTree = "<group>"; };
 		01882BCB20795416008244DB /* DORootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DORootVC.m; sourceTree = "<group>"; };
+		01882BCE2079554D008244DB /* DOFlower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOFlower.h; sourceTree = "<group>"; };
+		01882BCF2079554D008244DB /* DOFlower.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOFlower.m; sourceTree = "<group>"; };
+		01882BD120795583008244DB /* DOFlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DOFlowerFactory.h; sourceTree = "<group>"; };
+		01882BD220795583008244DB /* DOFlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DOFlowerFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		01882B94207953C7008244DB /* FlyweightPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				01882BCD20795529008244DB /* Model */,
 				01882BC9207953E3008244DB /* Controller */,
 				01882BC8207953DB008244DB /* Bases */,
 				01882BC7207953D5008244DB /* Resources */,
@@ -151,6 +158,17 @@
 				01882BCB20795416008244DB /* DORootVC.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		01882BCD20795529008244DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01882BD120795583008244DB /* DOFlowerFactory.h */,
+				01882BD220795583008244DB /* DOFlowerFactory.m */,
+				01882BCE2079554D008244DB /* DOFlower.h */,
+				01882BCF2079554D008244DB /* DOFlower.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01882BCC20795416008244DB /* DORootVC.m in Sources */,
+				01882BD320795583008244DB /* DOFlowerFactory.m in Sources */,
 				01882BA5207953C7008244DB /* main.m in Sources */,
 				01882B97207953C7008244DB /* AppDelegate.m in Sources */,
+				01882BD02079554D008244DB /* DOFlower.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
